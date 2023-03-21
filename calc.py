@@ -4,9 +4,11 @@ def compute(expression):
     num1 = int(num1)
     if operator == '+':
         return num0 + num1
-    if operator == '-':
+    elif operator == '-':
         return num0 - num1
-    if operator == '/':
+    elif operator == '*':
+        return num0*num1
+    elif operator == '/':
         return num0/num1
     else:
         print('unknown operator!')
