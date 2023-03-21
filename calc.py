@@ -1,8 +1,7 @@
 def compute(expression):
-    values = expression.split(' ')
-    num0 = int(values[0])
-    operator = values[1]
-    num1 = int(values[2])
+    num0, operator, num1 = expression.split(' ')
+    num0 = int(num0)
+    num1 = int(num1)
     if operator == '+':
         return num0 + num1
     if operator == '-':
@@ -10,3 +9,5 @@ def compute(expression):
     else:
         print('unknown operator!')
         return None
+        
+print(compute('5 + 6'))
